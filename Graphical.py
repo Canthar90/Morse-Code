@@ -14,7 +14,7 @@ class MyWidget(QtWidgets.QWidget):
         self.edit = QtWidgets.QTextEdit("Write your sentence here", alignment=QtCore.Qt.AlignCenter)
         self.edit.setStyleSheet("""
         max-width: 350px;
-        height: 150px;
+        height: 150px; 
         """)
 
         edit = QtWidgets.QHBoxLayout()
@@ -46,9 +46,9 @@ class MyWidget(QtWidgets.QWidget):
         self.layout = QtWidgets.QVBoxLayout(self)
 
         self.layout.addLayout(edit)
-        # self.layout.addWidget(self.text)
 
-        # self.layout.addWidget(self.button)
+
+
         self.layout.addLayout(a)
 
         self.button.clicked.connect(self.morse_it)
