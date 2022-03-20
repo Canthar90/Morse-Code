@@ -13,6 +13,15 @@ if __name__ == "__main__":
 
     widget = MyWidget()
     widget.resize(600, 300)
+    widget.setStyleSheet("""
+        border-color: #262626;
+        background-color: #262626;
+        color: #FFFFFF;
+        font-family: Titillium;
+        font-size: 18px;
+        
+   
+    """)
     widget.show()
 
 
