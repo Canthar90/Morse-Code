@@ -55,7 +55,7 @@ class MyWidget(QtWidgets.QWidget):
 
     @QtCore.Slot()
     def morse_it(self):
-        text = self.edit.text().lower()
+        text = self.edit.toPlainText().lower()
         listed = list(text)
         morsed=''
         # print(f'{listed}')
